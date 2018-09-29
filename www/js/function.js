@@ -1,8 +1,7 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     alert("Device is starting");
-}
-cordova.plugins.barcodeScanner.scan(
+    cordova.plugins.barcodeScanner.scan(
       function (result) {
           alert("We got a barcode\n" +
                 "Result: " + result.text + "\n" +
@@ -26,3 +25,4 @@ cordova.plugins.barcodeScanner.scan(
           disableSuccessBeep: false // iOS and Android
       }
    );
+}
