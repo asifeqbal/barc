@@ -20,7 +20,8 @@
         "plugins": {
             "phonegap-plugin-barcodescanner": {},
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-file-transfer": {}
+            "cordova-plugin-file-transfer": {},
+            "cordova-plugin-file": {}
         },
         "platforms": [
             "android"
