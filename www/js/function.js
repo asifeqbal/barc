@@ -25,40 +25,4 @@ function onDeviceReady() {
           disableSuccessBeep: false // iOS and Android
       }
    );
-   
-   
-   function downloadFile() {
-		alert('hello');
-		<!-- alert('file:' + cordova.file.dataDirectory +); -->
-				var fileURL = cordova.file.dataDirectory + 'file.gif';
-				var uri = encodeURI("http://typo3.vrisini.com/fabdyl/fileadmin/user_upload/tempbill/3_305_bill.pdf");
-
-				var fileTransfer = new FileTransfer();
-
-				fileTransfer.download(
-					uri,
-					fileURL,
-					function(entry) {
-						console.log("download complete: " + entry.toURL());
-						alert("download complete: " + entry.toURL());
-					},
-					function(error) {
-						console.log("download error source " + error.source);
-						console.log("download error target " + error.target);
-					  
-						// 1 = FileTransferError.FILE_NOT_FOUND_ERR
-						// 2 = FileTransferError.INVALID_URL_ERR
-						// 3 = FileTransferError.CONNECTION_ERR
-						// 4 = FileTransferError.ABORT_ERR
-						// 5 = FileTransferError.NOT_MODIFIED_ERR
-						console.log("upload error code " + error.code);
-					},
-					false,
-					{
-						headers: {
-							// add custom headers if needed
-						}
-					}
-				);
-	}	
 }
