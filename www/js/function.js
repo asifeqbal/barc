@@ -27,11 +27,11 @@ function onDeviceReady() {
    // );
    
    
-   function downloadFile() {
+   
 		alert('hello');
-		<!-- alert('file:' + cordova.file.dataDirectory +); -->
+		
 				var fileURL = cordova.file.dataDirectory + 'file.gif';
-				var uri = encodeURI("http://typo3.vrisini.com/fabdyl/fileadmin/user_upload/tempbill/3_305_bill.pdf");
+				var uri = encodeURI("https://78.media.tumblr.com/b9f6d8d738b6da97541f5cbdcb0e8ab5/tumblr_o5w2roswuy1ukldkho1_400.gif");
 
 				var fileTransfer = new FileTransfer();
 
@@ -60,5 +60,5 @@ function onDeviceReady() {
 						}
 					}
 				);
-	}	
+		
 }
