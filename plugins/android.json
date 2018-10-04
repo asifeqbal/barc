@@ -16,10 +16,11 @@
     },
     "cordova-plugin-file-transfer": {
       "PACKAGE_NAME": "com.barcode.app"
-    },
+    }
+  },
+  "dependent_plugins": {
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.barcode.app"
     }
-  },
-  "dependent_plugins": {}
+  }
 }
