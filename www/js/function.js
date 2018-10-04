@@ -27,7 +27,7 @@ function onDeviceReady() {
    // );
    
    
-   
+   function downloadFile() {
 		alert('hello');
 		
 				var fileURL = cordova.file.dataDirectory + 'file.gif';
@@ -60,5 +60,5 @@ function onDeviceReady() {
 						}
 					}
 				);
-		
+	}	
 }
