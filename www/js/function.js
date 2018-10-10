@@ -1,6 +1,8 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     alert("Device is starting");
+	
+	QRScanner.show();
     // cordova.plugins.barcodeScanner.scan(
       // function (result) {
           // alert("We got a barcode\n" +
